@@ -12,32 +12,44 @@
 -->
 </head>
 <body id="top">
+
+
+<!-- Widget Configuration -->
+
 <script>
 window.ChatWidgetConfig = {
-webhook: {
-url: 'https://agent.gnoppix.org/webhook/c734ec14-f355-4261-b175-657993591afc/chat',
-route: 'general'
-},
-branding: {
-logo: 'https://media.gnoppix.org/logo.svg',
-name: 'Gnoppix AI',
-welcomeText: 'Get instant answers to your questions!',
-responseTimeText: 'Click the button below to start
-chatting'
-},
-style: {
-primaryColor: '744BCC',
-secondaryColor: '#059669',
-position: 'right',
-backgroundColor: '#ffffff',
-fontColor: '#1f2937'
-},
-// Add suggested questions that users can click
+    webhook: {
+        url: 'https://agent.gnoppix.org/webhook/c734ec14-f355-4261-b175-657993591afc/chat',
+        route: 'general'
+    },
+    branding: {
+        logo: 'https://media.gnoppix.org/logo.svg',
+        name: 'Gnoppix AI',
+        welcomeText: 'Get instant answers to your questions!',
+        responseTimeText: 'Click the button below to start chatting'
+    },
+    style: {
+        primaryColor: '744BCC',
+        secondaryColor: '#059669',
+        position: 'right',
+        backgroundColor: '#ffffff',
+        fontColor: '#1f2937'
+    },
+    // Add suggested questions that users can click
+    suggestedQuestions: [ // <--- ADD THIS SECTION
+        "What are your services?",
+        "How can I contact support?",
+        "What is Gnoppix AI?",
+        "Tell me about your pricing."
+    ]
 };
 </script>
 <script
-src="https://cdn.jsdelivr.net/gh/funtastic418/chat-widget@main/chat-widget.js"></script>
-    <!-- Enhanced Background Elements -->
+src="https://cdn.jsdelivr.net/gh/funtastic418/chat-widget@main/chat-widget.js">
+</script>
+    
+
+<!-- Enhanced Background Elements -->
     <div class="cyber-bg">
         <div class="cyber-gradient"></div>
         <div class="matrix-rain" id="matrixRain"></div>
